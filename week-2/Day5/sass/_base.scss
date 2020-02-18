@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+$font-primary: Roboto;
+$color-main: #ff4067;
+$border-radius-main: 4px;
+$linearGradient: linear-gradient(180deg, #c468ff, #6e91f6);
+
+* {
+    font-family: $font-primary;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}

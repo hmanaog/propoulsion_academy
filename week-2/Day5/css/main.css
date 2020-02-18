@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+* {
+  font-family: Roboto;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex; }
+  .container.left {
+    width: 40%;
+    background-image: url("../assets/images/background_image.png"), linear-gradient(180deg, #c468ff, #6e91f6);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; }
+    .container.left .logo_wrap {
+      color: white;
+      height: 30vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around; }
+      .container.left .logo_wrap p {
+        color: rgba(255, 255, 255, 0.43);
+        width: 45%;
+        text-align: center;
+        display: flex;
+        justify-content: center; }
+    .container.left .button_wrap {
+      height: 15vh;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+      .container.left .button_wrap button {
+        border: solid rgba(255, 255, 255, 0.2);
+        background: none;
+        height: 40ph;
+        width: 126px;
+        border-radius: 20px;
+        padding: 10px;
+        margin-bottom: 50px;
+        margin-right: 20px; }
+    .container.left .icon {
+      color: white;
+      height: 10.5vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end; }
+      .container.left .icon button {
+        border: solid rgba(255, 255, 255, 0.2);
+        background: rgba(255, 255, 255, 0.2);
+        color: rgba(0, 0, 0, 0.5);
+        margin-right: 16px;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%; }
+    .container.left .copywrite {
+      color: white;
+      height: 10.5vh;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+  .container.right {
+    width: 60%;
+    display: flex;
+    flex-direction: column; }
+    .container.right .signUp_wrap {
+      height: 25vh;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+      padding: 30px; }
+      .container.right .signUp_wrap button {
+        background: white;
+        height: 40ph;
+        width: 120px;
+        border-radius: 20px;
+        padding: 10px;
+        margin: 7px; }
+      .container.right .signUp_wrap p {
+        padding: 10px;
+        margin: 7px; }
+    .container.right .login_wrap {
+      height: 50vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center; }
+      .container.right .login_wrap p {
+        font-size: 40px;
+        margin: 30px; }
+      .container.right .login_wrap .username input {
+        width: 250px;
+        height: 50px;
+        margin: 20px;
+        border: none;
+        border-bottom: 2px solid grey;
+        background-image: url(../assets/svgs/avatar.svg);
+        background-repeat: no-repeat;
+        background-position-y: 13px;
+        text-indent: 25px; }
+      .container.right .login_wrap .password input {
+        width: 250px;
+        height: 50px;
+        margin: 20px;
+        border: none;
+        border-bottom: 2px solid grey;
+        background-image: url(../assets/svgs/password.svg);
+        background-repeat: no-repeat;
+        background-position-y: 12.5px;
+        text-indent: 25px; }
+    .container.right .signIn_wrap {
+      height: 25vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start; }
+      .container.right .signIn_wrap button {
+        color: white;
+        background: linear-gradient(180deg, #c468ff, #6e91f6);
+        height: 60px;
+        width: 260px;
+        border-radius: 50px; }
+
+.post_container {
+  width: 100%;
+  height: 100vh;
+  background: #f8f8f9; }
+  .post_container .header {
+    height: 160px;
+    display: flex; }
+    .post_container .header.left {
+      width: 50%;
+      display: flex;
+      flex-direction: column; }
+      .post_container .header.left .navi_left {
+        background: white;
+        height: 80px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center; }
+        .post_container .header.left .navi_left .motion_logo {
+          width: 148px;
+          display: flex;
+          justify-content: flex-end; }
+          .post_container .header.left .navi_left .motion_logo img {
+            padding-left: 40px; }
+          .post_container .header.left .navi_left .motion_logo h3 {
+            padding-left: 12px; }
+        .post_container .header.left .navi_left .post_friend_wrap {
+          width: 485px;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center; }
+          .post_container .header.left .navi_left .post_friend_wrap p {
+            padding-right: 71px; }
+          .post_container .header.left .navi_left .post_friend_wrap img {
+            padding-right: 17.5px; }
+      .post_container .header.left .search {
+        height: 80px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center; }
+        .post_container .header.left .search .searchPost {
+          width: 250px;
+          height: 50px;
+          margin-left: 146px;
+          border: none;
+          background-image: url(../assets/svgs/search_icon.svg);
+          background-repeat: no-repeat;
+          background-position-y: 15px;
+          font-size: 20px;
+          text-indent: 30px; }
+    .post_container .header.right {
+      width: 50%;
+      display: flex;
+      flex-direction: column; }
+      .post_container .header.right .navi_right {
+        background: white;
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center; }
+        .post_container .header.right .navi_right .menu_icon {
+          padding-right: 50px; }
+        .post_container .header.right .navi_right .user_icon {
+          padding-right: 25px; }
+        .post_container .header.right .navi_right .bell_icon {
+          padding-right: 60px; }
+      .post_container .header.right .status {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center; }
+        .post_container .header.right .status .links {
+          width: 224px;
+          margin-right: 154px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center; }
+  .post_container .post_section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: solid blue; }
+    .post_container .post_section .post_left {
+      border: solid green;
+      width: 50%;
+      height: 100vh;
+      padding-top: 40px;
+      padding-right: 16px;
+      padding-left: 144px; }
+      .post_container .post_section .post_left .post1 {
+        background: white;
+        height: 120px;
+        width: 100%;
+        border: 1px solid grey;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; }
+        .post_container .post_section .post_left .post1 .statusPost {
+          width: 50%;
+          height: 50px;
+          margin: 30px;
+          border: none;
+          background-image: url(../assets/images/users/patricia.png);
+          background-repeat: no-repeat;
+          background-position-y: center;
+          background-size: 50px;
+          font-size: 20px;
+          text-indent: 60px; }
+        .post_container .post_section .post_left .post1 button {
+          height: 60px;
+          width: 60px;
+          border-radius: 50%;
+          margin: 30px;
+          background-image: url(../assets/images/send_button.png);
+          background-repeat: no-repeat;
+          background-position: center; }
+      .post_container .post_section .post_left .post3 {
+        height: 750px;
+        width: 100%;
+        margin-top: 32px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        background: white;
+        border: 1px solid grey; }
+        .post_container .post_section .post_left .post3 .top {
+          height: 70px;
+          width: 100%;
+          display: flex;
+          align-items: flex-end; }
+          .post_container .post_section .post_left .post3 .top .user_icon {
+            width: 15%;
+            height: 70px;
+            padding: 30px;
+            background-image: url(../assets/images/users/patricia.png);
+            background-position: bottom;
+            background-repeat: no-repeat; }
+          .post_container .post_section .post_left .post3 .top .user_name {
+            height: 70px;
+            width: 50%;
+            border: solid red;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end; }
+          .post_container .post_section .post_left .post3 .top .menu_logo {
+            width: 50%;
+            height: 70px;
+            padding-right: 25px;
+            border: solid purple;
+            display: flex;
+            justify-content: flex-end; }
+        .post_container .post_section .post_left .post3 .paragraph {
+          padding: 20px;
+          padding-left: 30px;
+          height: 73px;
+          width: 100%;
+          border: solid purple; }
+        .post_container .post_section .post_left .post3 .images {
+          display: grid;
+          width: 100%;
+          grid-template-columns: repeat(2, 1fr);
+          grid-gap: 20px;
+          padding-top: 25px;
+          padding-left: 30px; }
+        .post_container .post_section .post_left .post3 .actions {
+          padding-top: 30px;
+          padding-left: 17px;
+          width: 200px;
+          display: flex;
+          justify-content: space-around; }
+    .post_container .post_section .post_right {
+      width: 50%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      border: solid red; }
+      .post_container .post_section .post_right .post2 {
+        height: 231px;
+        margin: 30px;
+        border: 1px solid grey;
+        background: white;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column; }
+        .post_container .post_section .post_right .post2 .top {
+          display: flex; }
+          .post_container .post_section .post_right .post2 .top .user_icon {
+            width: 40px;
+            height: 40px;
+            border: solid blue;
+            margin-top: 30px;
+            margin-left: 30px;
+            background-image: url(../assets/images/users/patricia.png);
+            background-position: center; }
+          .post_container .post_section .post_right .post2 .top .user_name {
+            height: 40px;
+            width: 430px;
+            margin-top: 30px;
+            margin-left: 16px;
+            border: solid red; }
+          .post_container .post_section .post_right .post2 .top .menu_logo {
+            width: 240px;
+            height: 40px;
+            margin-top: 30px;
+            border: solid purple;
+            display: flex;
+            justify-content: flex-end; }
+        .post_container .post_section .post_right .post2 .paragraph {
+          margin-top: 25px;
+          margin-left: 30px;
+          height: 52px;
+          width: 700px;
+          border: solid purple; }
+        .post_container .post_section .post_right .post2 .actions {
+          margin-top: 30px;
+          margin-left: 17px;
+          width: 200px;
+          display: flex;
+          justify-content: space-around; }
+      .post_container .post_section .post_right .post4 {
+        height: 639px;
+        border: 1px solid grey;
+        background: white; }

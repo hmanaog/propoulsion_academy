@@ -1,0 +1,312 @@
+.post_container {
+  width: 100%;
+  height: 100vh;
+  background: #f8f8f9;
+  .header {
+    height: 160px;
+    //border: solid red;
+    display: flex;
+    // /////////////////////////////////////////////////////////////
+    &.left {
+      width: 50%;
+      //border: solid blue;
+      display: flex;
+      flex-direction: column;
+
+      .navi_left {
+        background: white;
+        height: 80px;
+        width: 100%;
+        //border: solid yellow;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        // ------------------------------------------------------------
+        .motion_logo {
+          width: 148px;
+          display: flex;
+          justify-content: flex-end;
+          img {
+            padding-left: 40px;
+          }
+          h3 {
+            padding-left: 12px;
+          }
+        }
+        // ------------------------------------------------------------
+        .post_friend_wrap {
+          width: 485px;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          p {
+            padding-right: 71px;
+          }
+          img {
+            padding-right: 17.5px;
+          }
+        }
+      }
+      // ------------------------------------------------------------
+      .search {
+        height: 80px;
+        //border: solid red;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        .searchPost {
+          width: 250px;
+          height: 50px;
+          margin-left: 146px;
+          border: none;
+          background-image: url(../assets/svgs/search_icon.svg);
+          background-repeat: no-repeat;
+          background-position-y: 15px;
+          font-size: 20px;
+          text-indent: 30px;
+        }
+      }
+    }
+    // ------------------------------------------------------------
+    &.right {
+      width: 50%;
+      //border: solid green;
+      display: flex;
+      flex-direction: column;
+
+      .navi_right {
+        background: white;
+        width: 100%;
+        height: 80px;
+        //border: solid purple;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        .menu_icon {
+          padding-right: 50px;
+        }
+        .user_icon {
+          padding-right: 25px;
+        }
+        .bell_icon {
+          padding-right: 60px;
+        }
+      }
+      // ------------------------------------------------------------
+
+      .status {
+        width: 100%;
+        height: 80px;
+        //border: solid brown;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        .links {
+          width: 224px;
+          margin-right: 154px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+      }
+    }
+  }
+
+  .post_section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: solid blue;
+    // display: grid;
+    // grid-template-columns: repeat(2, 1fr);
+    // grid-gap: 32px;
+    //////////////////////////////////////////////////////
+    .post_left {
+      border: solid green;
+      width: 50%;
+      height: 100vh;
+      padding-top: 40px;
+      padding-right: 16px;
+      padding-left: 144px;
+
+      .post1 {
+        background: white;
+        height: 120px;
+        width: 100%;
+        border: 1px solid grey;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .statusPost {
+          width: 50%;
+          height: 50px;
+          margin: 30px;
+          //border: solid red;
+          border: none;
+          background-image: url(../assets/images/users/patricia.png);
+          background-repeat: no-repeat;
+          background-position-y: center;
+          background-size: 50px;
+          font-size: 20px;
+          text-indent: 60px;
+        }
+
+        button {
+          height: 60px;
+          width: 60px;
+          border-radius: 50%;
+          margin: 30px;
+          background-image: url(../assets/images/send_button.png);
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+
+      .post3 {
+        height: 750px;
+        width: 100%;
+        margin-top: 32px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        background: white;
+        border: 1px solid grey;
+
+        .top {
+          height: 70px;
+          width: 100%;
+          //border: solid red;
+          display: flex;
+          align-items: flex-end;
+
+          .user_icon {
+            width: 15%;
+            height: 70px;
+            //border: solid blue;
+            padding: 30px;
+            background-image: url(../assets/images/users/patricia.png);
+            background-position: bottom;
+            background-repeat: no-repeat;
+          }
+          .user_name {
+            height: 70px;
+            width: 50%;
+            border: solid red;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+          }
+          .menu_logo {
+            width: 50%;
+            height: 70px;
+            padding-right: 25px;
+            border: solid purple;
+            display: flex;
+            justify-content: flex-end;
+          }
+        }
+
+        .paragraph {
+          padding: 20px;
+          padding-left: 30px;
+          height: 73px;
+          width: 100%;
+          border: solid purple;
+        }
+
+        .images {
+          display: grid;
+          width: 100%;
+          grid-template-columns: repeat(2, 1fr);
+          grid-gap: 20px;
+          padding-top: 25px;
+          padding-left: 30px;
+        }
+
+        .actions {
+          padding-top: 30px;
+          padding-left: 17px;
+          width: 200px;
+          display: flex;
+          justify-content: space-around;
+        }
+      }
+    }
+
+    //////////////////////////////////////////////////////
+    .post_right {
+      width: 50%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      border: solid red;
+
+      .post2 {
+        height: 231px;
+        margin: 30px;
+        border: 1px solid grey;
+        background: white;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+
+        .top {
+          display: flex;
+
+          .user_icon {
+            width: 40px;
+            height: 40px;
+            border: solid blue;
+            margin-top: 30px;
+            margin-left: 30px;
+            background-image: url(../assets/images/users/patricia.png);
+            background-position: center;
+          }
+          .user_name {
+            height: 40px;
+            width: 430px;
+            margin-top: 30px;
+            margin-left: 16px;
+            border: solid red;
+          }
+          .menu_logo {
+            width: 240px;
+            height: 40px;
+            margin-top: 30px;
+            border: solid purple;
+            display: flex;
+            justify-content: flex-end;
+          }
+        }
+
+        .paragraph {
+          margin-top: 25px;
+          margin-left: 30px;
+          height: 52px;
+          width: 700px;
+          border: solid purple;
+        }
+        .actions {
+          margin-top: 30px;
+          margin-left: 17px;
+          width: 200px;
+          display: flex;
+          justify-content: space-around;
+        }
+      }
+
+      .post4 {
+        height: 639px;
+        border: 1px solid grey;
+        background: white;
+      }
+    }
+  }
+}

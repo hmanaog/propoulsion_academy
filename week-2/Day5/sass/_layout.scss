@@ -1,0 +1,168 @@
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+
+    &.left {
+        width: 40%;
+        //border:solid black;
+        background-image: url("../assets/images/background_image.png"), $linearGradient;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        .logo_wrap {
+            color: white;
+            //border: solid red;
+            height: 30vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+
+            p {
+                color: rgba(255, 255, 255, 0.43);
+                width: 45%;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        .button_wrap{
+            //border: solid blue;
+            height: 15vh;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            button {
+                border: solid rgba(255, 255, 255, 0.2);
+                background: none;
+                height: 40ph;
+                width: 126px;
+                border-radius: 20px;
+                padding: 10px;
+                margin-bottom: 50px;
+                margin-right: 20px;
+            }
+        }
+
+        .icon {
+            color: white;
+            //border: solid green;
+            height: 10.5vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+
+            button {
+                border: solid rgba(255, 255, 255, 0.2);
+                background:  rgba(255, 255, 255, 0.2);;
+                color: rgba(0, 0, 0, 0.5);
+                margin-right: 16px;
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+            }
+        }
+
+        .copywrite {
+            color: white;
+            //border: solid yellow;
+            height: 10.5vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    }
+// Right Side section  ---------------------------------
+    &.right {
+        width: 60%;
+        //border:solid black;
+        //background: grey;
+        display: flex;
+        flex-direction: column;
+
+        .signUp_wrap {
+            height: 25vh;
+            //border: solid red;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start;
+            padding: 30px;
+
+            button {
+                background: white;
+                height: 40ph;
+                width: 120px;
+                border-radius: 20px;
+                padding: 10px;
+                margin: 7px;
+            }
+            p {
+                padding: 10px;
+                margin: 7px;   
+            }
+        }
+        
+        .login_wrap {
+            height: 50vh;
+            //border: solid blue;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+
+            p {
+                font-size: 40px;
+                margin: 30px;
+            }
+
+            .username input{
+                width: 250px;
+                height: 50px;
+                margin: 20px;
+                border: none;
+                border-bottom: 2px solid grey;
+                background-image: url(../assets/svgs/avatar.svg);
+                background-repeat: no-repeat;
+                background-position-y: 13px;
+                text-indent: 25px;
+            }
+
+            .password input {
+                width: 250px;
+                height: 50px;
+                margin: 20px;
+                border: none;
+                border-bottom: 2px solid grey;
+                background-image: url(../assets/svgs/password.svg);
+                background-repeat: no-repeat;
+                background-position-y: 12.5px;
+                text-indent: 25px;
+            }
+        }
+
+        .signIn_wrap {
+            height: 25vh;
+            //border: solid green;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+
+            button {
+                color: white;
+                background: $linearGradient;
+                height: 60px;
+                width: 260px;
+                border-radius: 50px;
+            }
+        }
+    }
+}
