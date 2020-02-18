@@ -1,0 +1,25 @@
+.discoCells {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+}
+
+.red_cell {
+    background-color: rgba(255,0,0,0.6);
+}
+
+.blue_cell {
+    background-color: rgba(blue, 0.6);
+}
+
+.yellow_cell {
+    background-color: rgba(yellow, 0.6);
+}
+
+.green_cell {
+    background-color: rgba(green, 0.6);
+}
+
+.purple_cell {
+    background-color: rgba(purple, 0.6);
+}

@@ -1,0 +1,25 @@
+body {
+    height: 710px;
+    width: 710;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.box {
+    height: 510px;
+    width: 510px;
+    background-color: aqua;
+    border: solid aqua;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cell {
+    height: 100px;
+    width: 100px;
+    background-image: url('../images/logo192.png');
+    background-size: cover;
+    border: 1px solid gray;
+}
